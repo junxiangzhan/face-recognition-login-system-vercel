@@ -1,0 +1,13 @@
+
+.webcam-container {
+    flex-grow: 1;
+    border: solid transparent;
+    border-width: 1rem 0;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}

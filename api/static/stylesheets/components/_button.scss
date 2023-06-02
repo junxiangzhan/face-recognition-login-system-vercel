@@ -1,0 +1,48 @@
+
+.button {
+    display: inline-block;
+    background: none;
+    padding: .375rem;
+    padding-top: .5rem;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    font-size: .9rem;
+    text-decoration: none;
+    line-height: 1;
+    font-weight: 300;
+    transition: .125s;
+}
+
+.button-primary {
+    padding: .75rem 1.5rem;
+    background-color: #0080ff;
+    color: white;
+
+    &:hover {
+        filter: brightness(.95);
+    }
+
+    &:active {
+        filter: brightness(.9);
+    }
+
+    &:disabled {
+        background-color: #0060ff40;
+    }
+}
+
+
+.button-secondary {
+    padding: .75rem;
+    background-color: #0080ff00;
+    color: #0080ff;
+
+    &:hover {
+        background-color: #0080ff10;
+    }
+
+    &:active {
+        background-color: #0080ff20;
+    }
+}

@@ -1,0 +1,37 @@
+%icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-image: var(--icon);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-image: var(--icon);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    --scaleX: 1;
+    --scaleY: 1;
+    transform: scale(var(--scaleX), var(--scaleY));
+
+    &.flip-horizontal {
+        --scaleX: -1;
+    }
+}
+
+.user-icon {
+    @extend %icon;
+    --icon: url('/static/images/user-icon.svg');
+}
+
+.email-icon {
+    @extend %icon;
+    --icon: url('/static/images/email-icon.svg');
+}
+
+.birth-icon {
+    @extend %icon;
+    --icon: url('/static/images/birth-icon.svg');
+}
